@@ -74,7 +74,8 @@ Verified automatically by `/skill-test static` — no fixture needed.
 
 **Assertions:**
 - [ ] "May I write" is asked before REPORT.md is created
-- [ ] REPORT.md contains `### Executive Summary` with verdict + rationale
+- [ ] REPORT.md follows `.claude/docs/templates/vertical-slice-report.md`, including
+      a `## Recommendation: [PROCEED / PIVOT / KILL]` heading carrying the verdict
 - [ ] Build is isolated to `prototypes/` (not `src/`)
 - [ ] `CD-PLAYTEST` gate is invoked and its verdict recorded
 - [ ] Handoff explicitly names `/gate-check pre-production`
@@ -199,9 +200,12 @@ Verified automatically by `/skill-test static` — no fixture needed.
 
 - Verdict tokens are PROCEED / PIVOT / KILL throughout — the skill text, its
   `description`, and `.claude/docs/templates/vertical-slice-report.md` all agree.
-  A stray "STOP" in the Phase 6 fallback skeleton was corrected in the same pass
-  that added this spec; assert that no verdict token other than these three
-  appears anywhere in the skill.
+  Assert that no verdict token other than these three appears in the skill.
+- Report structure has a single source of truth: the skill reads
+  `.claude/docs/templates/vertical-slice-report.md` and defines no inline
+  fallback, matching `/prototype`. Structural assertions about REPORT.md should
+  therefore be written against that template, not against the skill text — if
+  the template's headings change, this spec follows it.
 - Slice implementation quality is held to production standards here, unlike
   `/prototype` — but the *code style* itself is still not assertion-tested;
   that belongs to `/code-review`.
