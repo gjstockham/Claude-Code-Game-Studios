@@ -18,12 +18,19 @@
 
 ---
 
-> **This is the maintained fork.**
+> **This is a personal fork.**
 > Claude Code Game Studios was originally created by
 > [Donchitos](https://github.com/Donchitos/Claude-Code-Game-Studios), whose
-> repository has had no activity since May 2026. This fork is the actively
-> maintained line — file issues and pull requests here, not upstream. No
-> changes made here are proposed to or accepted from the original repository.
+> repository has had no activity since May 2026.
+>
+> This fork exists so I can adapt the template to my own projects. It is not a
+> community continuation and I am not taking on maintainership — changes here
+> follow what my projects need, not a roadmap, and nothing is proposed back
+> upstream. Several other forks exist; this one carries no claim to be the
+> canonical successor.
+>
+> You are welcome to use it under the MIT licence, but treat it as someone
+> else's working copy rather than a supported product.
 
 ---
 
@@ -49,7 +56,7 @@ The result: you still make every decision, but now you have a team that asks the
 - [Design Philosophy](#design-philosophy)
 - [Customization](#customization)
 - [Platform Support](#platform-support)
-- [Community](#community)
+- [Support](#support)
 - [Credits](#credits)
 - [License](#license)
 
@@ -288,10 +295,16 @@ This is a **template**, not a locked framework. Everything is meant to be custom
 
 Primary development and testing on **Windows 10** with Git Bash. All hooks use POSIX-compatible patterns (`grep -E`, not `grep -P`) and include fallbacks for missing tools, so they should run on macOS and Linux. The `notify.sh` hook uses PowerShell for Windows toast notifications and is a no-op elsewhere — desktop notifications on macOS/Linux are not yet wired. Cross-platform testing is ongoing; please file issues for any platform-specific breakage.
 
-## Community
+## Support
 
-- **Discussions** — [GitHub Discussions](https://github.com/gjstockham/Claude-Code-Game-Studios/discussions) for questions, ideas, and showcasing what you've built
-- **Issues** — [Bug reports and feature requests](https://github.com/gjstockham/Claude-Code-Game-Studios/issues)
+There isn't any, and that's deliberate — this is a personal fork kept only as
+far as my own projects require. You're welcome to open an
+[issue](https://github.com/gjstockham/Claude-Code-Game-Studios/issues), but it
+may go unanswered, and agents, skills, or workflows may change or be removed
+whenever that suits my use.
+
+If you want something to build on rather than borrow from, fork it — the MIT
+licence allows it, and your own copy won't shift under you.
 
 ---
 
@@ -303,13 +316,13 @@ The studio hierarchy, the agent roster, and the collaborative design protocol ar
 their design; this fork continues from
 [v1.0.0](https://github.com/Donchitos/Claude-Code-Game-Studios).
 
-This fork is maintained separately and is not affiliated with or endorsed by the
-original author. It solicits no sponsorship on their behalf — if you want to
-support the original work, do so through their own repository.
+This is a personal fork, not affiliated with or endorsed by the original author.
+It solicits no sponsorship on their behalf — if you want to support the original
+work, do so through their own repository.
 
 ---
 
-*Built for Claude Code. Maintained fork — contributions welcome via [GitHub Discussions](https://github.com/gjstockham/Claude-Code-Game-Studios/discussions).*
+*Built for Claude Code. A personal fork of [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — see [Credits](#credits).*
 
 ## License
 
