@@ -1,0 +1,48 @@
+name: Validate template
+
+# Structural validation of the CCGS template itself — agent and skill
+# frontmatter, model-tier rules, testing-framework parity, and documentation
+# consistency. Every check is deterministic grep/awk over files on disk, so
+# this needs no API key and finishes in seconds.
+#
+# This does NOT run the game test suite described in
+# .claude/docs/coding-standards.md — that applies to games built from this
+# template, which have an engine and a test runner. This repository has neither.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate template structure
+        run: bash tools/ci/validate-template.sh
+
+  shellcheck:
+    runs-on: ubuntu-latest
+    # ADVISORY, not blocking. The 10 existing hook scripts predate this
+    # workflow and have never been linted, so this job is expected to report
+    # findings on its first runs. Read them, fix them, and once the baseline is
+    # clean, delete this line to make the job blocking.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint hook and CI scripts
+        # Hooks run on every session start and tool use, so a syntax or
+        # quoting error is disruptive. SC1091 (can't follow source) and SC2086
+        # (word splitting) are excluded: hooks intentionally rely on splitting
+        # for tool arguments and do not source external files at lint time.
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y shellcheck
+          shellcheck --severity=warning --exclude=SC1091,SC2086 \
+            .claude/hooks/*.sh tools/ci/*.sh
