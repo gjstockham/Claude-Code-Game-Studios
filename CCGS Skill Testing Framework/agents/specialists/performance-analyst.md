@@ -11,7 +11,7 @@ No gate IDs assigned.
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references profiling / bottleneck analysis / performance metrics)
-- [ ] `allowed-tools:` list includes Read, Write, Edit, Bash, Glob, Grep
+- [ ] `tools:` list includes Read, Write, Edit, Bash, Glob, Grep
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority over implementing any optimization — explicitly identifies itself as analysis/recommendation only
 

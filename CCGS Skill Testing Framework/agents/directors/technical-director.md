@@ -13,8 +13,8 @@
 Verified by reading the agent's `.claude/agents/technical-director.md` frontmatter:
 
 - [ ] `description:` field is present and domain-specific (references architecture, feasibility, ADR — not generic)
-- [ ] `allowed-tools:` list may include Read for architecture documents; Bash only if required for technical checks
-- [ ] Model tier is `claude-opus-4-6` per coordination-rules.md (directors with gate synthesis = Opus)
+- [ ] `tools:` list may include Read for architecture documents; Bash only if required for technical checks
+- [ ] Model tier is `opus` (alias) per coordination-rules.md (directors with gate synthesis = Opus)
 - [ ] Agent definition does not claim authority over game design decisions or creative direction
 
 ---

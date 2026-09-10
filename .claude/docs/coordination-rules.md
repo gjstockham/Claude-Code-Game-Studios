@@ -16,20 +16,26 @@
 
 Skills and agents are assigned to model tiers based on task complexity:
 
-| Tier | Model | When to use |
+| Tier | Alias | When to use |
 |------|-------|-------------|
-| **Haiku** | `claude-haiku-4-5-20251001` | Read-only status checks, formatting, simple lookups — no creative judgment needed |
-| **Sonnet** | `claude-sonnet-4-6` | Implementation, design authoring, analysis of individual systems — default for most work |
-| **Opus** | `claude-opus-4-6` | Multi-document synthesis, high-stakes phase gate verdicts, cross-system holistic review |
+| **Haiku** | `haiku` | Read-only status checks, formatting, simple lookups — no creative judgment needed |
+| **Sonnet** | `sonnet` | Implementation, design authoring, analysis of individual systems — default for most work |
+| **Opus** | `opus` | Multi-document synthesis, high-stakes phase gate verdicts, cross-system holistic review |
+| **Fable** | `fable` | Above Opus: demanding reasoning and long-horizon agentic work. **Not assigned to any agent or skill.** Costs more than Opus. Not a creative-writing tier despite the name — route narrative work to Sonnet. |
 
-Skills with `model: haiku`: `/help`, `/sprint-status`, `/story-readiness`, `/scope-check`,
+**Always write the alias, never a literal model ID.** Aliases (`sonnet`, `opus`,
+`haiku`, `fable`) follow the current model generation automatically; a pinned ID
+such as `claude-sonnet-5` goes stale at the next release. All 49 agents and 73
+skills already use aliases — keep it that way.
+
+Skills with `model: haiku`: `/help`, `/sprint-status`, `/scope-check`,
 `/project-stage-detect`, `/changelog`, `/patch-notes`, `/onboard`
 
 Skills with `model: opus`: `/review-all-gdds`, `/architecture-review`, `/gate-check`
 
-All other skills default to Sonnet. When creating new skills, assign Haiku if the
-skill only reads and formats; assign Opus if it must synthesize 5+ documents with
-high-stakes output; otherwise leave unset (Sonnet).
+All other skills are Sonnet, set explicitly. When creating a new skill, assign
+Haiku if it only reads and formats; assign Opus if it must synthesize 5+ documents
+with high-stakes output; otherwise set `model: sonnet`.
 
 ## Subagents vs Agent Teams
 

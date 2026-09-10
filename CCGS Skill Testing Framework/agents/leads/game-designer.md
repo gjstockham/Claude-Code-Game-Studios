@@ -13,8 +13,8 @@
 Verified by reading the agent's `.claude/agents/game-designer.md` frontmatter:
 
 - [ ] `description:` field is present and domain-specific (references core loop, progression, combat rules, economy, player-facing design — not generic)
-- [ ] `allowed-tools:` list is read-focused; includes Read for GDDs and design docs; no Bash unless design tooling requires it
-- [ ] Model tier is `claude-sonnet-4-6` per coordination-rules.md
+- [ ] `tools:` list is read-focused; includes Read for GDDs and design docs; no Bash unless design tooling requires it
+- [ ] Model tier is `sonnet` (alias) per coordination-rules.md
 - [ ] Agent definition does not claim authority over code implementation, visual art style, or standalone narrative lore decisions
 
 ---

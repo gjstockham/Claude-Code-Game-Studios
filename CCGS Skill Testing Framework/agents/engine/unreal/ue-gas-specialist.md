@@ -11,7 +11,7 @@
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references GAS, abilities, GameplayEffects, AttributeSets)
-- [ ] `allowed-tools:` list matches the agent's role (Read/Write for GAS source files; no deployment or server tools)
+- [ ] `tools:` list matches the agent's role (Read/Write for GAS source files; no deployment or server tools)
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority over UI implementation or low-level net serialization
 

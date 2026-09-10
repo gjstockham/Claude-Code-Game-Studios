@@ -11,7 +11,7 @@
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references Blueprint architecture and optimization)
-- [ ] `allowed-tools:` list matches the agent's role (Read for Blueprint project files; no server or deployment tools)
+- [ ] `tools:` list matches the agent's role (Read for Blueprint project files; no server or deployment tools)
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority over C++ implementation decisions
 

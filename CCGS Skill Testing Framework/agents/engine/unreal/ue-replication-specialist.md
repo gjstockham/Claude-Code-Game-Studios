@@ -11,7 +11,7 @@
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references replication, RPCs, client prediction, bandwidth)
-- [ ] `allowed-tools:` list matches the agent's role (Read/Write for C++ and Blueprint source files; no infrastructure or deployment tools)
+- [ ] `tools:` list matches the agent's role (Read/Write for C++ and Blueprint source files; no infrastructure or deployment tools)
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority over server infrastructure, game server architecture, or gameplay logic correctness
 

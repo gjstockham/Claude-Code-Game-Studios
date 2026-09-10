@@ -11,7 +11,7 @@ No gate IDs assigned.
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references Shader Graph / HLSL / VFX Graph / URP / HDRP)
-- [ ] `allowed-tools:` list includes Read, Write, Edit, Glob, Grep
+- [ ] `tools:` list includes Read, Write, Edit, Glob, Grep
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority over gameplay code or art direction
 

@@ -11,7 +11,7 @@
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references i18n, string extraction, locale pipeline, localization)
-- [ ] `allowed-tools:` list matches the agent's role (Read/Write for localization config, pipeline docs, string tables; no game source editing or deployment tools)
+- [ ] `tools:` list matches the agent's role (Read/Write for localization config, pipeline docs, string tables; no game source editing or deployment tools)
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority over narrative content, game code implementation, or translation quality
 

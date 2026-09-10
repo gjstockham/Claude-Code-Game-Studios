@@ -12,7 +12,7 @@
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references test cases, bug reports, test execution, regression testing)
-- [ ] `allowed-tools:` list matches the agent's role (Read/Write for tests/ and production/qa/evidence/; no source code editing tools)
+- [ ] `tools:` list matches the agent's role (Read/Write for tests/ and production/qa/evidence/; no source code editing tools)
 - [ ] Model tier is Sonnet (default for QA specialists)
 - [ ] Agent definition does not claim authority over test strategy, fix implementation, or acceptance criterion definition
 

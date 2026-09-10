@@ -11,7 +11,7 @@
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references Unreal Engine)
-- [ ] `allowed-tools:` list matches the agent's role (Read, Write for UE project files; no deployment tools)
+- [ ] `tools:` list matches the agent's role (Read, Write for UE project files; no deployment tools)
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority outside its declared domain (no art, no server infra)
 
