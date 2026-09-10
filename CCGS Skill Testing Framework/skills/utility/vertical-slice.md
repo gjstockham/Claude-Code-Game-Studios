@@ -197,11 +197,11 @@ Verified automatically by `/skill-test static` — no fixture needed.
 
 ## Coverage Notes
 
-- **Known skill defect:** Phase 6's REPORT.md skeleton describes the executive
-  summary as "PROCEED / PIVOT / **STOP**" while every other reference in the
-  skill — including its own `description` — uses **KILL**. A verdict-token
-  assertion will fail against the Phase 6 heading until the skill is corrected.
-  Tracked separately; not a defect in this spec.
+- Verdict tokens are PROCEED / PIVOT / KILL throughout — the skill text, its
+  `description`, and `.claude/docs/templates/vertical-slice-report.md` all agree.
+  A stray "STOP" in the Phase 6 fallback skeleton was corrected in the same pass
+  that added this spec; assert that no verdict token other than these three
+  appears anywhere in the skill.
 - Slice implementation quality is held to production standards here, unlike
   `/prototype` — but the *code style* itself is still not assertion-tested;
   that belongs to `/code-review`.

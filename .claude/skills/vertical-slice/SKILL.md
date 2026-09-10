@@ -226,7 +226,7 @@ skip it. It feeds directly into sprint planning.
 Read `.claude/docs/templates/vertical-slice-report.md` to get the report structure.
 If the template file is not found, use this fallback structure:
 - `## Vertical Slice Report — [Game Title] — [Date]`
-- `### Executive Summary` (PROCEED / PIVOT / STOP verdict + 2-sentence rationale)
+- `### Executive Summary` (PROCEED / PIVOT / KILL verdict + 2-sentence rationale)
 - `### Core Loop Validation` (what was tested, what passed, what failed)
 - `### Feel Assessment` (animation, controls, feedback — subjective notes)
 - `### Technical Findings` (performance, engine issues, architectural risks)
