@@ -1,5 +1,11 @@
 # Contributing to Claude Code Game Studios
 
+> **Read the fork notice in the [README](README.md) first.** This is a personal
+> fork kept for its owner's own projects, not a maintained community project.
+> Contributions are accepted, but there is no guarantee of a review or a reply,
+> and direction is set by what those projects need. The guidance below applies
+> if you do send something.
+
 CCGS is a coordination framework for indie game development using Claude Code.
 Contributions are welcome — bug fixes, new skills that fill a real gap, agent
 improvements, and hook fixes. PRs that don't fit the framework's direction will
