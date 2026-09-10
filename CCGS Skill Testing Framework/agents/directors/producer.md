@@ -13,8 +13,8 @@
 Verified by reading the agent's `.claude/agents/producer.md` frontmatter:
 
 - [ ] `description:` field is present and domain-specific (references scope, sprint, milestone, production — not generic)
-- [ ] `allowed-tools:` list is primarily read-focused; Bash only if sprint/milestone files require parsing
-- [ ] Model tier is `claude-opus-4-6` per coordination-rules.md (directors with gate synthesis = Opus)
+- [ ] `tools:` list is primarily read-focused; Bash only if sprint/milestone files require parsing
+- [ ] Model tier is `opus` (alias) per coordination-rules.md (directors with gate synthesis = Opus)
 - [ ] Agent definition does not claim authority over design decisions or technical architecture
 
 ---

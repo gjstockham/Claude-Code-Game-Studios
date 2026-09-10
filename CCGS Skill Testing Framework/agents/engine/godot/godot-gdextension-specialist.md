@@ -11,7 +11,7 @@ No gate IDs assigned.
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references GDExtension / godot-cpp / native bindings)
-- [ ] `allowed-tools:` list includes Read, Write, Edit, Bash, Glob, Grep
+- [ ] `tools:` list includes Read, Write, Edit, Bash, Glob, Grep
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition does not claim authority over GDScript or shader authoring
 

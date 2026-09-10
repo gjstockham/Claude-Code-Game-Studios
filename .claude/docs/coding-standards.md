@@ -57,6 +57,9 @@ All stories must have appropriate test evidence before they can be marked Done:
 
 ## CI/CD Rules
 
+These rules apply to **your game project**, built from this template. Set the
+pipeline up with `/test-setup`, which scaffolds the workflow for your engine.
+
 - Automated test suite runs on every push to main and every PR
 - No merge if tests fail — tests are a blocking gate in CI
 - Never disable or skip failing tests to make CI pass — fix the underlying issue
@@ -64,3 +67,21 @@ All stories must have appropriate test evidence before they can be marked Done:
   - **Godot**: `godot --headless --script tests/gdunit4_runner.gd`
   - **Unity**: `game-ci/unity-test-runner@v4` (GitHub Actions)
   - **Unreal**: headless runner with `-nullrhi` flag
+
+### CI for the template repository itself
+
+This repository has no engine and no game tests, so the rules above do not
+apply to it. It runs `.github/workflows/validate.yml` instead, which executes
+`tools/ci/validate-template.sh` on every push to main and every PR:
+structural validation of agent and skill frontmatter, the model-alias rule,
+testing-framework parity, and documentation consistency. It is deterministic
+and needs no API key.
+
+Run it locally before opening a PR:
+
+```bash
+bash tools/ci/validate-template.sh
+```
+
+Each check exists because the corresponding defect actually occurred here. When
+you fix a class of template defect, add a check so it cannot recur.

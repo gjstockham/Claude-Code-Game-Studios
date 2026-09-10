@@ -11,7 +11,7 @@ No gate IDs assigned.
 ## Static Assertions (Structural)
 
 - [ ] `description:` field is present and domain-specific (references Godot shading language / materials / post-processing)
-- [ ] `allowed-tools:` list includes Read, Write, Edit, Glob, Grep
+- [ ] `tools:` list includes Read, Write, Edit, Glob, Grep
 - [ ] Model tier is Sonnet (default for specialists)
 - [ ] Agent definition references `docs/engine-reference/godot/VERSION.md` as the authoritative source for Godot shader API changes
 

@@ -588,6 +588,17 @@ skills:
     priority: low
     category: utility
 
+  - name: vertical-slice
+    spec: CCGS Skill Testing Framework/skills/utility/vertical-slice.md
+    last_static: ""
+    last_static_result: ""
+    last_spec: ""
+    last_spec_result: ""
+    last_category: ""
+    last_category_result: ""
+    priority: critical
+    category: utility
+
   - name: playtest-report
     spec: CCGS Skill Testing Framework/skills/utility/playtest-report.md
     last_static: ""

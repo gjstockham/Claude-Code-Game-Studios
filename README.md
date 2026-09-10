@@ -14,9 +14,23 @@
   <a href=".claude/hooks"><img src="https://img.shields.io/badge/hooks-12-orange" alt="12 Hooks"></a>
   <a href=".claude/rules"><img src="https://img.shields.io/badge/rules-11-red" alt="11 Rules"></a>
   <a href="https://docs.anthropic.com/en/docs/claude-code"><img src="https://img.shields.io/badge/built%20for-Claude%20Code-f5f5f5?logo=anthropic" alt="Built for Claude Code"></a>
-  <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20this%20project-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"></a>
-  <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-Support%20this%20project-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
 </p>
+
+---
+
+> **This is a personal fork.**
+> Claude Code Game Studios was originally created by
+> [Donchitos](https://github.com/Donchitos/Claude-Code-Game-Studios), whose
+> repository has had no activity since May 2026.
+>
+> This fork exists so I can adapt the template to my own projects. It is not a
+> community continuation and I am not taking on maintainership — changes here
+> follow what my projects need, not a roadmap, and nothing is proposed back
+> upstream. Several other forks exist; this one carries no claim to be the
+> canonical successor.
+>
+> You are welcome to use it under the MIT licence, but treat it as someone
+> else's working copy rather than a supported product.
 
 ---
 
@@ -42,8 +56,8 @@ The result: you still make every decision, but now you have a team that asks the
 - [Design Philosophy](#design-philosophy)
 - [Customization](#customization)
 - [Platform Support](#platform-support)
-- [Community](#community)
-- [Supporting This Project](#supporting-this-project)
+- [Support](#support)
+- [Credits](#credits)
 - [License](#license)
 
 ---
@@ -146,7 +160,7 @@ All hooks fail gracefully if optional tools are missing — nothing breaks, you 
 
 1. **Clone or use as template**:
    ```bash
-   git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git my-game
+   git clone https://github.com/gjstockham/Claude-Code-Game-Studios.git my-game
    cd my-game
    ```
 
@@ -281,31 +295,34 @@ This is a **template**, not a locked framework. Everything is meant to be custom
 
 Primary development and testing on **Windows 10** with Git Bash. All hooks use POSIX-compatible patterns (`grep -E`, not `grep -P`) and include fallbacks for missing tools, so they should run on macOS and Linux. The `notify.sh` hook uses PowerShell for Windows toast notifications and is a no-op elsewhere — desktop notifications on macOS/Linux are not yet wired. Cross-platform testing is ongoing; please file issues for any platform-specific breakage.
 
-## Community
+## Support
 
-- **Discussions** — [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions) for questions, ideas, and showcasing what you've built
-- **Issues** — [Bug reports and feature requests](https://github.com/Donchitos/Claude-Code-Game-Studios/issues)
+There isn't any, and that's deliberate — this is a personal fork kept only as
+far as my own projects require. You're welcome to open an
+[issue](https://github.com/gjstockham/Claude-Code-Game-Studios/issues), but it
+may go unanswered, and agents, skills, or workflows may change or be removed
+whenever that suits my use.
 
----
-
-## Supporting This Project
-
-Claude Code Game Studios is free and open source. If it saves you time or helps you ship your game, consider supporting continued development:
-
-<p>
-  <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
-  &nbsp;
-  <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
-</p>
-
-- **[Buy Me a Coffee](https://www.buymeacoffee.com/donchitos3)** — one-time support
-- **[GitHub Sponsors](https://github.com/sponsors/Donchitos)** — recurring support through GitHub
-
-Sponsorships help fund time spent maintaining skills, adding new agents, keeping up with Claude Code and engine API changes, and responding to community issues.
+If you want something to build on rather than borrow from, fork it — the MIT
+licence allows it, and your own copy won't shift under you.
 
 ---
 
-*Built for Claude Code. Maintained and extended — contributions welcome via [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions).*
+## Credits
+
+Claude Code Game Studios was originally created by
+**[Donchitos](https://github.com/Donchitos)** and released under the MIT License.
+The studio hierarchy, the agent roster, and the collaborative design protocol are
+their design; this fork continues from
+[v1.0.0](https://github.com/Donchitos/Claude-Code-Game-Studios).
+
+This is a personal fork, not affiliated with or endorsed by the original author.
+It solicits no sponsorship on their behalf — if you want to support the original
+work, do so through their own repository.
+
+---
+
+*Built for Claude Code. A personal fork of [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) — see [Credits](#credits).*
 
 ## License
 
